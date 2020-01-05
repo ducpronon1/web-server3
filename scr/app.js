@@ -6,7 +6,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
-console.log('ducpronon1')
+
 const htmlpath1 = path.join(__dirname,'../public')
 const viewPath = path.join(__dirname,'../template/views')
 const partialPath = path.join(__dirname,'../template/partials')
