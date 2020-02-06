@@ -6,6 +6,7 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 const htmlpath1 = path.join(__dirname,'../public')
 const viewPath = path.join(__dirname,'../template/views')
@@ -71,6 +72,6 @@ app.get('*', (req, res) => {
         errorMess: 'Page not pound'
     })
 })
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('successful')
 })
