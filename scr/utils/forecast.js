@@ -9,8 +9,7 @@ const forecast = (latitude, longitude, callback) => {
             callback('unable to find lacation', undefined)
         }else{
             callback(undefined, {
-                temporature: body.currently.temperature,
-                weather: body.daily.summary
+                weather: body.daily.data[0].summary + 'It is currently ' + body.currently.temperature + ' degrees out.There is a ' + body.currently.precipProbability + '% chance of rain'
             })
         }
     })

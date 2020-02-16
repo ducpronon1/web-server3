@@ -47,7 +47,7 @@ app.get('/weather', (req, res) => {
           if(error){
             return res.send({error})
           }
-          res.send({ address: PlaceName, Temporature: temporature, Today: weather})
+          res.send({ address: PlaceName, Today: weather})
         })
     })           
 })

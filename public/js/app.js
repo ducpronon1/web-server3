@@ -33,8 +33,8 @@ weatherForm.addEventListener('submit', (e) => {
             messageOne.textContent = data.error
         }else{
         
-        messageOne.textContent =  data.address + ' is ' + data.Today
-        messageTwo.textContent = "Temperature : " + data.Temporature 
+        messageOne.textContent =  data.address
+        messageTwo.textContent = data.Today
         }
     })
 })
